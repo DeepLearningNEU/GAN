@@ -29,7 +29,7 @@ COCO 2017 Captions (downloaded by `prepare_coco.py`, not stored in git):
 ## Setup and running (NEU Explorer HPC)
 
 ```bash
-git clone git@github.com:DeepLearningNEU/GP1.git && cd GP1
+git clone git@github.com:DeepLearningNEU/GAN.git && cd GAN
 sbatch slurm/setup_env.sbatch      # conda env at ~/gp1_env (Python 3.11, CUDA 12.1 PyTorch)
 sbatch slurm/prepare_data.sbatch   # COCO -> /scratch/$USER/gp1/data, caches SD v1.5 weights
 sbatch slurm/m1_gpu.sbatch         # runs the M1 notebook + 5 prompt->image samples on a GPU
