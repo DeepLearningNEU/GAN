@@ -1,12 +1,16 @@
-# environments / IDE
-.venv/
-env/
+# IDE / OS
 .idea/
-__pycache__/
-.ipynb_checkpoints/
+.vscode/
 .DS_Store
 
-# data, weights, caches (live on HPC /scratch)
+# Python
+.venv/
+env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data, weights and model caches (live on /scratch, not in git)
 data/
 hf_cache/
 checkpoints/
@@ -14,5 +18,6 @@ checkpoints/
 *.ckpt
 *.zip
 
-# slurm logs
-logs/*.log
+# SLURM logs (keep the folder)
+logs/*
+!logs/.gitkeep
